@@ -1,0 +1,186 @@
+div.body{
+    width: 100%;
+    height: auto;
+    background-image: url("../images/ContactUs_bodyBG.a5550014a1ee.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 0%;
+    position: relative;
+}
+.body h1{
+    font-family: Coolvetica;
+    font-size: 5rem;
+    text-align: center;
+    padding: 6vh 0 0 0;
+    color: #003e7a;
+}
+div.form-container{
+    width: 65vw;
+    height: auto;
+    margin: 5vh auto 10vh auto;
+    overflow: hidden;
+    box-shadow: -0.4vw 0.5vh 1vw 0.01vw gray;
+    border-radius: 2.25vw;
+    background-image: url("../images/Plate-Background.4f4c335c61c6.png");
+    background-size: 105vw auto;
+    background-position: 18% 39%;   
+    background-repeat: no-repeat;
+}
+.plates-header-blueBG{
+    width: 100%;
+    height: 10rem;
+    background-image: url("../images/Header-Background-Blue.fad112f35e54.png");
+    background-position: 35% 75%;
+    background-repeat: no-repeat;
+    background-size: auto 60vh;
+    mix-blend-mode: multiply;
+} 
+.form-content{
+    width: 80%;
+    margin: 0 auto 0 auto;
+}
+.form-label{
+    font-family: Coolvetica;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #003e7a;
+    margin: 1rem 0;
+}
+.form-container label{
+    font-family: Coolvetica;
+    font-size: 1.6rem;
+    font-weight: 100;
+    color: #003e7a;
+}
+.form-container input, .form-container textarea{
+    font-family: Coolvetica;
+    font-size: 1.4rem;
+    font-weight: 100;
+    width: 100%;
+    height: auto;
+    border: 2px solid #003e7a;
+    border-radius: 2vw;
+    padding: 12px 20px;
+    margin: 8px 0;
+    background: none;
+    outline: none;
+}
+.form-container textarea{
+    min-height: 10rem;
+}
+div.button{
+    text-align: center;
+    margin-bottom: 5vh;
+}
+.form-container button{
+    font-family: Coolvetica;
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: #003e7a;
+    width: 150px;
+    padding: 4px 0;
+    border: 2px solid #003e7a;
+    border-radius: 6vw;
+    background: none;
+    transition: 0.25s;
+}
+.form-container button:hover{
+    color: white;
+    background-color: #003e7a;
+    cursor: pointer;
+}
+div.error{
+    text-align: center;
+    margin: 1rem 0;
+}
+.error{
+    font-family: Coolvetica;
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: #5a040d;
+}
+p.body-text{
+    font-family: Coolvetica;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 2rem;
+    text-align: center;
+    padding: 0 20vh;
+    margin-bottom: 100px;
+}
+.body-text a{
+    color: black;
+}
+div.dialogue{
+    position: absolute;
+    width: 240px;
+    height: 180px;
+    right: 5%;
+    bottom: -10%;
+    transition: 0.25s ease;
+}
+div.dialogue:hover{
+    transform: scale3d(1.15,1.15,1.15);
+}
+.dialogue img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 170px;
+}
+.dialogue p{
+    font-family: Coolvetica;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    padding: 0 50px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    color: #be8b1c;
+}
+@media(max-width: 720px){
+    .body h1{
+        font-size: 3rem;
+    }
+    div.form-container{
+        width: 85vw;
+        border-radius: 40px;
+        background-size: 400vw auto;
+        background-position: 18% 39%;
+    }
+    .plates-header-blueBG{
+        height: 7rem;
+        background-size: auto 200px;
+        background-position: 18% 70%; 
+    }
+    .form-label{
+        font-size: 1.75rem;
+    }
+    .form-content{
+        width: 90%;
+    }
+    .form-container label{
+        font-size: 1.4rem;
+    }
+    .form-container input{
+        font-size: 1.3rem;
+        width: 70%;
+        border-radius: 50px;
+    }
+    .form-container textarea{
+        font-size: 1.3rem;
+        width: 80%;
+        border-radius: 35px;
+    }
+    p.body-text{
+        padding: 0 5vw;
+        margin-bottom: 200px;
+    }
+    div.dialogue{
+        bottom: -17.5%;
+    }
+}
+

@@ -1,0 +1,211 @@
+.header h1{
+    font-family: Coolvetica;
+    font-size: 5.4rem;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    padding: 2.5vh 0 0 0;
+    color: #003364;
+}
+
+section.sub-section{
+    margin: 5vh auto;
+    width: 80vw;
+}
+
+section.sub-section h2{
+    font-family: Akira-Expanded;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2.5vh 0 1vh 0;
+    color: #e8a81d;
+    margin-bottom: 2vh;
+}
+
+section.sub-section p{
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+    font-family: Coolvetica;
+    line-height: 2rem;
+}
+
+.plates-table{
+    width: 100%;
+    display: table;
+    align-items: center;
+    margin: auto;
+    border-spacing: 3vw 5vh;
+    margin: 2.5vh 0 5vh 0;
+}
+
+div.plates-row{
+    display: table-row;
+    width: 100%;
+}
+
+div.plates-cell{
+    display: table-cell;
+    width: 40%;
+}
+
+div.plates-cell h3{
+    border-radius: 3vw;
+    padding: 1rem 1vw;
+    width: 95%;
+    text-align: center;
+    font-family: Akira-Expanded;
+    font-size: 1.2rem;
+    color: white;
+    background-image: linear-gradient(90deg, #850918, #003e7a);
+    box-shadow: 0.2vw 0.3vh 0.5vw 0.1vw gray;
+    margin: auto auto
+}
+
+div.plates-cell div{
+    margin-top: 5vh;
+    background-image: url(../images/GetInvolved-BoxBG.png);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    min-height: 35vh;
+    padding: 7.5% 10%;
+    border-radius: 5vw;
+    box-shadow: 0.2vw 0.3vh 0.5vw 0.1vw gray;
+}
+
+div.plates-cell div p{
+    font-family: Coolvetica;
+    font-size: 1.3rem;
+    text-align: left;
+    line-height: 1.5rem;
+    color: #262626
+}
+
+.button{
+    display: block;
+    text-decoration: none;
+    border: 0.2vw solid;
+    border-radius: 1.5vw;
+    padding: 0.4vw 1vw;
+    margin: 0.5vh auto 3.5vh auto;
+    width: 70%;
+    font-size: 1.1rem;
+    font-family: Coolvetica;
+    transition: 0.5s;
+    text-align: center;
+}
+
+a.blue{
+    color: #003e7a;
+}
+a.blue:hover{
+    color: white;
+    background-color: #003e7a;
+    border-color: #003e7a;
+}
+a.red{
+    color: #5a040d;
+}
+a.red:hover{
+    color: white;
+    background-color: #5a040d;
+    border-color: #5a040d;
+}
+
+.yellow{
+    color: #be8b1c;
+    margin-top: 3vh;
+}
+.yellow:hover{
+    color: white;
+    background-color: #e8a81d;
+    border-color: #e8a81d;
+}
+
+.gradient{
+    font-size: 1.35rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    width: 20vw;
+    border-width: 0.2rem;
+    border-style: solid;
+    border-radius: 2vw;
+    padding: 0.5rem 1rem;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.gradient:hover{
+    -webkit-background-clip: revert;
+    -webkit-text-fill-color: white;
+    border-color: transparent;
+}
+
+@media (max-width: 900px) and (min-width: 721px){
+    div.plates-cell div{
+        background-size: 160%;
+    }
+    section.sub-section{
+        margin: 0 5vw;
+        width: 90vw;
+    }
+    .button{
+        border: 0.3vw solid;
+    }
+}
+
+@media(max-width: 700px){
+    .header h1{
+        font-size: 3rem;
+    } 
+    section.sub-section{
+        margin: 0 5vw;
+        width: 90vw;
+    }
+    section.sub-section h2{
+        font-size: 1.2rem
+    }
+    section.sub-section p{
+        font-family: Coolvetica;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: 1vh;
+    } 
+    div.plates-table{
+        border-spacing: 0vw 2.5vh;
+    }
+    div.plates-row{
+        display: block;
+    }
+    div.plates-cell{
+        display: block;
+        width: 100%;
+        margin-bottom: 5vh;
+    }
+    div.plates-cell h3{
+        font-size: 1.2rem;
+        border-radius: 10vw;
+    }
+    div.plates-cell div{
+        border-radius: 10vw;
+        background-size: 160%;
+        
+    }
+    div.plates-cell div p{
+        font-size: 1.1rem;
+    }
+    .button{
+        border: 0.8vw solid;
+        border-radius: 6vw;
+        padding: 1.6vw 4vw;
+        font-size: 2vh;
+    }
+    .gradient{
+        width: 60vw;
+        font-size: 2.9vh;
+    }
+    .plates-table{
+        margin-bottom: 2.5vh;
+    }
+}

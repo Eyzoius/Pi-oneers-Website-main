@@ -1,0 +1,232 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/aboutus.css' %}">
+<link rel="stylesheet" href="{% static 'css/lightslider.css' %}">
+<!------- body -------> 
+
+<section class="body">
+    <div id="header-container"><img src="{% static 'images/Header-AboutUs.png' %}" id="body-header" class="show-on-scroll notransform"></div>
+    <div class="aboutus-details-container"> 
+        <div class="body-cell show-on-scroll">
+            <h1>OUR CONTINUING PASSION</h1>
+            <p>π-oneers was once a dream—a dream to break barriers and provide the youth of today quality and accessible STEM education. Now, that dream came true and has materialized into our big and loving π-oneers family! We continuously aim to catalyze a community that fosters a common interest in STEM and its related fields, abstractions, and ideas.</p>
+        </div class="body-cell show-on-scroll">
+        <div class="body-cell show-on-scroll">
+            <img src="{% static 'images/AboutUs-Passion.png' %}">
+        </div>
+
+        <div class="body-cell show-on-scroll">
+            <img src="{% static 'images/AboutUs-Mission.png' %}">
+        </div>
+        <div class="body-cell show-on-scroll">
+            <h1>OUR MISSION</h1>
+            <p>π-oneers aims to provide free and quality STEM education to all students within our reach. The organization also looks for driven students with great potential in STEM and guides them to success without having to worry about financial hurdles.</p>
+        </div>
+
+        <div class="body-cell show-on-scroll">
+            <h1>OUR VISION</h1>
+            <p>π-oneers envisions creating a society with no limits or barriers and with access to quality STEM education for those who are passionate about learning. We at π-oneers aim to catalyze a community that fosters a common interest in STEM, as well as problem-solving skills needed for the fourth industrial revolution.</p>
+        </div>
+        <div class="body-cell show-on-scroll">
+            <img src="{% static 'images/AboutUs-Vision.png' %}">
+        </div>  
+    </div>
+    
+    <div class="aboutus-org-chart">
+        <h1 class="show-on-scroll notransform">OUR FRIENDLY AND SYMBIOTIC WEB</h1>
+        <div class="org-chart-container show-on-scroll">
+            <img id="orgchart-contained" alt="Pi-oneers Organizational Chart" src="{% static 'images/AboutUs-OrgChart.png' %}">
+        </div>
+        <div id="orgchart-modal" class="modal">
+            <i class="fas fa-times close" onclick="closeModal()"></i>
+            <img id="orgchart-zoomed" class="modal-content">
+            <div id="orgchart-caption"></div>
+        </div>
+    </div>
+    <div class="meet-the-team">
+        <div class="meet-the-team-header">
+            <h1 class="show-on-scroll"><span>MEET THE TEAM</span></h1>
+            <p class="body-text show-on-scroll">With a flame of academic fervor and camaraderie being fed every day by the enthusiasm of the π-oneers family, the Executive Committee continues to work to maintain the organization's united front and achieve π-oneers's vision. This group manages a grand internal ecosystem of around 105 local Filipino high school students dedicated to providing accessible and quality STEM education to and fostering a widespread passion for the sciences among the rising Filipino youth.</p>
+        </div>
+        <div class="slider-box-container show-on-scroll notransform">
+            <!-- slider ------------------------------>
+            <ul id="autoWidth" class="cs-hidden">
+                <!-- 1-------------------------------------------------->
+                <li class="item-a">
+                    <!-- slider-box -->
+                    <div class="box">
+                        <div class="model-container nohover">
+                            <img src="{% static 'images/ExecutiveTeam/Edrian-Liao.jpg' %}">
+                        </div>
+                        <div class="box-details-container">
+                            <h1>Edrian Paul Liao</h1>
+                            <h2>Co-Founder, Executive Director - Externals</h2>
+                            <p>I am a freshman and a Karsh Scholar at Duke University where I plan to pursue electrical engineering and computer science. I am an avid advocate of quality STEM education for underprivileged youth that's why I, together with other students (and alumni) from PSHS-CVC, co-founded π-oneers. My hobbies include singing, playing volleyball and badminton. Currently, I am a member of the Duke Badminton Club and a Christian co-ed acapella group at Duke called Something Borrowed Something Blue (SBSB).</p>
+                        </div>
+                    </div>
+                </li>
+                <!-- 2-------------------------------------------------->
+                <li class="item-a">
+                    <!-- slider-box -->
+                    <div class="box">
+                        <div class="model-container">
+                            <img src="{% static 'images/ExecutiveTeam/Joanne-Micaela-Dizo.png' %}">
+                        </div>
+                        <div class="box-details-container">
+                            <h1>Joanne Micaela R. Dizo</h1>
+                            <h2>Co-Founder, Executive Director - Internals</h2>
+                            <p>I'm currently studying BS Applied Mathematics - Master in Data Science at Ateneo de Manila University. My advocacies when summed up is equality: accessible quality education, making sustainability attainable for everyone, and gender equality are some. Aside from 𝛑-oneers, I'm also a co-founder of another organization, Pagsibol. Outside academics and organizations, I enjoy watching series and movies, sewing my own and my pets' clothes, and experimenting with random recipes. My 16 months with 𝛑-oneers, really helped me get to know more about myself and my passion/advocacies.</p>
+                        </div>
+                    </div>
+                </li>
+                <!-- 3-------------------------------------------------->
+                <li class="item-a">
+                    <!-- slider-box -->
+                    <div class="box">
+                        <div class="model-container">
+                            <img src="{% static 'images/ExecutiveTeam/Vraig-De-Leon.jpg' %}">
+                        </div>
+                        <div class="box-details-container">
+                            <h1>Vraig De Leon</h1>
+                            <h2>Managing Director</h2>
+                            <p>Vraig De Leon comes from Yokohama, Japan and graduated from Yokohama Commercial High School. He is the recipient of the Japan National Commercial License Award (1% of graduates nationally) and earned several awards in business competitions. He represented Japan in the UN conferences and also participated in computer club and varsity rowing. At New York University, Vraig plans to pursue a double major in Data Science and Business & Finance.  He is a member of the Undergraduate Business Association, Japanese Cultural Association, and International Filipino Association. Helping people feel connected and driving them toward something great has always been his passion.</p>
+                        </div>
+                    </div>
+                </li>
+                <!-- 4-------------------------------------------------->
+                <li class="item-a">
+                    <!-- slider-box -->
+                    <div class="box">
+                        <div class="model-container">
+                            <img src="{% static 'images/ExecutiveTeam/Luis-Jerard-Salum.jpg' %}">
+                        </div>
+                        <div class="box-details-container">
+                            <h1>Luis Jerard Salum</h1>
+                            <h2>Executive Secretary</h2>
+                            <p>Luis is a fresh graduate from Philippine Science High School - Cagayan Valley Campus. He is usually sleeping with rare cases of him studying. His hobbies include sleeping, eating, and sleeping again.<br><br></p>
+                        </div>
+                    </div>
+                </li>
+                <!-- 5-------------------------------------------------->
+                <li class="item-a">
+                    <!-- slider-box -->
+                    <div class="box">
+                        <div class="model-container">
+                            <img src="{% static 'images/ExecutiveTeam/Bea-Jane-Serna.jpg' %}">
+                        </div>
+                        <div class="box-details-container">
+                            <h1>Bea Jane V. Serna</h1>
+                            <h2>Publications Head</h2>
+                            <p>I am a BS Agribusiness Economics freshman in UP Mindanao. I am very passionate in writing, and I am very vocal with my advocacies which include quality and accessible education. My experience in Pi-oneers has led me to enjoy rendering service to the Filipino youth by bridging the gap between them and STEM.<br><br><br><br><br><br><br><br><br><br><br></p>
+                        </div>
+                    </div>
+                </li>
+                <!-- 6-------------------------------------------------->
+                <li class="item-a">
+                    <!-- slider-box -->
+                    <div class="box">
+                        <div class="model-container">
+                            <img src="{% static 'images/ExecutiveTeam/Nicky-Anne-Solis.jpeg' %}">
+                        </div>
+                        <div class="box-details-container">
+                            <h1>Nicky Anne H. Solis</h1>
+                            <h2>HR-Head</h2>
+                            <p>Part-time student, full-time Bloom & Reveluv! When I joined Pioneers, I was a senior at PSHS-SRC, and now I’m currently a first-year Psychology student at Mapúa University. Being in Pioneers has definitely helped me grow in a lot of ways. I’ve met so many amazing people that bond and work together for this cause, and it's just a great thing. I hope that this organization continues to thrive. I hope as it grows, it helps and reaches more students.<br><br><br><br><br><br><br><br><br><br></p>
+                        </div>
+                    </div>
+                </li>
+                <!-- 7-------------------------------------------------->
+                <li class="item-a">
+                    <!-- slider-box -->
+                    <div class="box">
+                        <div class="model-container">
+                            <img src="{% static 'images/ExecutiveTeam/Guia-Bernardine-Anonat-Dorado.jpg' %}">
+                        </div>
+                        <div class="box-details-container">
+                            <h1>Guia Bernardine A Dorado</h1>
+                            <h2>HR Officer - HR Ambassadors Head</h2>
+                            <p>A Capsunian, a criminologist in the making and an aspiring lawyer/prosecutor. I love the idea of a youth serving youth and pioneers made its way to pass with my likings and recognition. I admire how they dedicate themselves to the love of science and technology. And im looking forward for more years to come and MABUHAY ang Siyensya at Teknolohiya.<br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+                        </div>
+                    </div>
+                </li>
+                <!-- 8-------------------------------------------------->
+                <li class="item-a">
+                    <!-- slider-box -->
+                    <div class="box">
+                        <div class="model-container">
+                            <img src="{% static 'images/ExecutiveTeam/Rya-Jasmin-Donelo.jpeg' %}">
+                        </div>
+                        <div class="box-details-container">
+                            <h1>Rya Jasmin A. Donelo</h1>
+                            <h2>Logistics Head</h2>
+                            <p>I am a Grade 11 student at Philippine Science High School - Cagayan Valley Campus currently taking Chemistry as my science core and Biology as my elective. I advocate for STEM and quality education that’s why I joined Pi-oneees! I also advocate for sustainability and environment, feminism, and equality to all individuals (ending racism and LGBTQ+ rights). During my free time, I binge watch Netflix Series. I also bike, jog, and run. I also love traveling and trying out new things!<br><br><br><br><br><br></p>
+                        </div>
+                    </div>
+                </li>
+                <!-- 9-------------------------------------------------->
+                <li class="item-a">
+                    <!-- slider-box -->
+                    <div class="box">
+                        <div class="model-container">
+                            <img src="{% static 'images/ExecutiveTeam/Trisha-Sia.jpeg' %}">
+                        </div>
+                        <div class="box-details-container">
+                            <h1>Trisha Danielle Sia</h1>
+                            <h2>Tutorial Services Head</h2>
+                            <p>Hello! I'm Trisha, a first-year student at the University of British Columbia studying Business and Computer Science. Apart from business and tech, I'm also really passionate about education, which was why I joined pi-oneers in the first place. I started in pi-oneers as a Math tutor and wanted to be more involved in the tutorial services part, so I applied to be head and got accepted! My experience in pi-oneers has been a great one as I got to contribute to pi-oneers mission and vision and be a part of an amazing team! I play sports, do art, play the piano, and watch Netflix in my spare time.</p>
+                        </div>
+                    </div>
+                </li>
+                <!-- 10-------------------------------------------------->
+                <li class="item-a">
+                    <!-- slider-box -->
+                    <div class="box">
+                        <div class="model-container">
+                            <img src="{% static 'images/ExecutiveTeam/Alex-Lee.jpg' %}">
+                        </div>
+                        <div class="box-details-container">
+                            <h1>Alexandra Gabrielle T. Lee</h1>
+                            <h2>Executive Secretaries Head</h2>
+                            <p>I am currently a 12th grader in PSHS-CVC. I enjoy reading and delving into alternate universes while doing so hehe. I love music and sleeping a whole lot. Pi-oneers has been a great experience and I believe it will continuously teach me new things and introduce me to all sorts of people. :)</p>
+                        </div>
+                    </div>
+                </li>
+                <!-- 11-------------------------------------------------->
+                <li class="item-a">
+                    <!-- slider-box -->
+                    <div class="box">
+                        <div class="model-container">
+                            <img src="{% static 'images/ExecutiveTeam/Ayen-Bacolod.jpg' %}">
+                        </div>
+                        <div class="box-details-container">
+                            <h1>Arianne May Bacolod</h1>
+                            <h2>Public Relations Head</h2>
+                            <p>17 years old from Philippine Science High School - Cagayan Valley Campus. I love making song covers and watching movies and series (preferably sitcom, fantasy and psych thriller). I have been with pi-oneers since the very beginning, and I don't have any plans of leaving yay !!</p>
+                        </div>
+                    </div>
+                </li>
+                <!-- 12-------------------------------------------------->
+                <li class="item-a">
+                    <!-- slider-box -->
+                    <div class="box">
+                        <div class="model-container nohover">
+                            <img src="{% static 'images/ExecutiveTeam/Bernard-Tapiru-Jr.png' %}">
+                        </div>
+                        <div class="box-details-container">
+                            <h1>Bernard Tapiru Jr.</h1>
+                            <h2>Technology Head</h2>
+                            <p>Seventeen years old, PSHS-CVC '22. Heyooo! Welcome to my bio. Everyone deserves a comfortable life where they can work towards their aspirations without handicaps. I believe this is achievable through technology. Hence, I love building things to promote the welfare of others. I am interested in programming, electronics, and mechanics.<br>I also led this website’s development and designed its front-end. Feel free to send us feedback through our contact form! I plan to improve it as my skills develop :]</p>
+                        </div>
+                    </div>
+                </li>
+                
+              </ul>
+            
+        </div>
+    </div>
+</section>
+
+<script src="{% static 'js/aboutus.js' %}"></script>
+<script src="{% static 'js/lightslider.js' %}"></script>
+{% endblock %}

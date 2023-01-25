@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+<!------- Header -------> 
+
+<section class="header">
+    <div id="banner-container">
+        <div id="banner-row">
+            <div class="banner-column show-on-scroll"><img id="banner-img-1" src="{% static 'images/Laptop.png' %}"></div>
+            <div class="banner-column show-on-scroll"><img id="banner-img-2" src="{% static 'images/Tagline.png' %}"></div>
+        </div>
+    </div>
+</section>
+
+<!------- Body -------> 
+
+<section class="body">
+    <img class="body-header show-on-scroll" src="{% static 'images/Pioneers-Header.png' %}">
+    <p class="body-text show-on-scroll">
+        π-oneers, the shapers of the world, is a non-profit organization led and run by volunteer high schoolers who are committed to helping fellow students learn and love the fields and workings of Science, Technology, Engineering, and Mathematics (STEM).
+    </p>
+    <div id="body-plates-container">
+        <div class="body-row">
+            <div class="body-cell blue mb-top show-on-scroll">
+                <div class="plates-header">
+                    <div class="plates-header-blueBG"></div>
+                    <h1>MICRO-BEGINNING</h1>
+                </div>
+                <p>
+                    Starting out as an informal, small, and campus-based peer tutorial service among batchmates, the earliest form of the organization was founded by several scholars of Philippine Science High School – Cagayan Valley Campus (PSHS – CVC). It was only after months of peer tutoring when co-founders Edrian Paul Liao, Joanne Micaela Dizo, John Vincent Albino, Arianne May Bacolod, Alexandra Gabrielle Lee, and Gabrielle Rose Abad decided to take the budding organization to the next level. This bold step was a product of their passion for STEM, its quality, and its accessibility—a passion that is shared and nurtured within and outside π-oneers.
+                </p>
+                <a href="{% url 'about-us' %}" class="button">> What are we doing now?</a href="">
+            </div>
+            <div class="body-cell red mb-top show-on-scroll">
+                <div class="plates-header">
+                    <div class="plates-header-redBG"></div>
+                    <h1>MACRO-GROWTH</h1>
+                </div>
+                <p>
+                    Since the organization’s relaunch in August 2020, π-oneers has reached more than <span class="metrics">90,909</span> people on Facebook, gained nearly <span class="metrics">{{fb_likes}}</span> FB likes, and acquired more than <span class="metrics">400</span> Twitter followers...
+                </p>
+                <h2>...AND COUNTING!</h2>
+                <p>
+                    Really, with π-oneers, the @LimitDoesNotExist! From Luzon’s Batanes to Visayas’s Cebu to Mindanao’s Jolo, the organization has reached <span class="metrics">16</span> regions, <span class="metrics">49</span> provinces, and <span class="metrics">62</span> schools. We have gathered more than <span class="metrics">350</span> ambassadors who are ready to spread and introduce our cause to the rising and vibrant Filipino youth.
+                </p>
+                <a href="{% url 'getinvolved' %}" class="button">> Join the π-oneers family!</a href="">
+                <p>
+                    Nothing can stop π-oneers. The Philippines today; the whole world tomorrow!
+                </p>
+            </div>
+        </div>
+        <div class="body-row">
+            <div class="body-cell">
+                <div class="blue show-on-scroll">
+                    <div class="plates-header">
+                        <div class="plates-header-blueBG"></div>
+                        <h1>SYMBIOSIS</h1>
+                    </div>
+                    <p>
+                        Reflected by our mantra and interests, the flagship project of π-oneers is our free peer tutoring program. This program consists of volunteer-led sessions offering academic help in secondary-level mathematics, biology, chemistry, and physics. Our volunteer teachers, who are also high schoolers, are united in their willingness and passion for helping fellow students navigate the roads, seas, and airs of STEM subjects.
+                    </p>
+                    <a href="{% url 'contact' %}" class="button">> Interested in our tutorials? <span class="hidden">See our FAQs!</span></a href="">
+                    <p>
+                        We have launched and are currently doing other projects. Through our symbiosis with other like-passioned organizations, we also take part in inter-organizational activities. Check the project featured below!
+                    </p>
+                </div>
+                <div class="extension" id="project">
+                    <p id="featured-project-details">Did you miss our first wave of tutorial services? 😓 Worry no more because we're back 🥳</p>
+                    <img id="projects-img" src="{% static 'images/sample-proj.jpg' %}">
+                </div>
+                <i id="arrow-1" class="arrow fas fa-chevron-down"></i>
+            </div>
+            <div class="body-cell">
+                <div class="red show-on-scroll">
+                    <div class="plates-header">
+                        <div class="plates-header-redBG"></div>
+                        <h1>PUBLICATIONS</h1>
+                    </div>
+                    <p>
+                        Stay updated! Our trivia publications cover a large number of mind-blowing did-you-know’s in STEM, while our announcement publications feature ambassador search activities, core member applications, tutorial schedules, and others! So stay tuned and join our journey!
+                    </p>
+                </div>
+                <div class="extension" id="publication">
+                    <p id="featured-publication-details" style="white-space: pre-line;">{{latest_post}}</p>
+                    <img id="publications-img" src="{{post_img}}">
+                </div>
+                <i id="arrow-2" class="arrow fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </div>
+    <p class="body-text show-on-scroll notransform">
+        <b><i>Any questions?</i></b> Reach out to us and we'll get back to you before you can finish saying the whole name of the giant protein Titin!
+    </p>
+    <a href="{% url 'contact' %}" class="button yellow show-on-scroll">> Start overcoming the limit by reaching out!</a>
+</section>
+<script src="{% static 'js/index.js' %}"></script>
+{% endblock %}

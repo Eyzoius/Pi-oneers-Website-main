@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/getinvolved.css' %}">
+<!------- Body -------> 
+<section class="header show-on-scroll notransform">
+    <h1>Get Involved</h1>
+</section>
+
+<section class="sub-section">
+    <h2 class="show-on-scroll">OUR FAMILY'S DOORS ARE ALWAYS OPEN TO THOSE WHO SHARE OUR PASSION</h2>
+    <p class="show-on-scroll">Do you want to take part in our journey? Are you ready to spread our cause among the rising Filipino youth? Do you have what it takes? Of course, you do—we believe in you! You can join us as an ambassador or a member of the executive and core team. But, wait, what’s the difference?</p>
+    <div class="plates-table">
+        <div class="plates-row">
+            <div class="plates-cell">
+                <h3 class="show-on-scroll">AMBASSADORS</h3>
+                <div class="show-on-scroll">
+                    <p>Although the main HQ of π-oneers cannot physically reach all parts of the Philippines, our ambassadors do exactly that on behalf of the whole organization!</p>
+                    </br>
+                    <p>Help us reach far and wide by spreading our vision. Join us in providing accessible STEM education and overcoming the limits! What are you waiting for?</p>
+                    <br>
+                    <a href="{% url 'contact' %}" class="button blue">>Be a π-oneer ambassador!</a>
+                </div>
+            </div>
+            <div class="plates-cell">
+                <h3 class="show-on-scroll">Executive and Core Member</h3>
+                <div class="show-on-scroll">
+                    <p>Just like no building can stand without a solid and well-founded foundation, no organization can function without a strong and reliable team behind it!</p>
+                    </br>
+                    <p>Do you want to be a member of the team that works behind the scenes? Check our FB page to see which executive and core positions are currently open!</p>
+                    <br>
+                    <a href="{% url 'contact' %}" class="button red">>Be a π-oneer core member!!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="sub-section">
+    <h2 class="show-on-scroll">JOIN AND SUPPORT OUR CYTOSKELETAL WORK</h2>
+    <p class="show-on-scroll">π-oneers is an organization that provides free academic services to the Filipino youth. However, as a nonprofit, we rely on friends and generous sponsors to oil and fund our operations.</p>
+    <div class="plates-table">
+        <div class="plates-row">
+            <div class="plates-cell">
+                <h3 class="show-on-scroll">MUTUALISM</h3>
+                <div class="show-on-scroll">
+                    <p>More often than not, one cannot stand alone in the face of everything. Because of this, mutualism arose—those wherein positive effects enrich both sides. In humans, this leads to projects and outcomes of unity. Do you share our mission and ideals? We, as an organization, believe in the great power of cooperation. Want to partner with us?</p>
+                </div>
+            </div>
+            <div class="plates-cell">
+                <h3 class="show-on-scroll">COMMENSALISM</h3>
+                <div class="show-on-scroll">
+                    <p>Sometimes, one organism offers refuge or support to another without anything in return to watch the latter grow and flourish—and possibly contribute to something bigger than the two of them. Funds have been such a barrier in the life of the general studentry. We would like to offer them free services, and your donations would help us achieve that.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="{% url 'contact' %}" class="button yellow gradient show-on-scroll">>Let's connect!</a>
+</section>
+
+</section>
+<script src="{% static 'js/getinvolved.js' %}"></script>
+{% endblock %}

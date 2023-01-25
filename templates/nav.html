@@ -1,0 +1,18 @@
+{% load static %}
+<!------- Navigation Bar -------> 
+<nav>
+    <a href="{% url 'home' %}" class="show-on-scroll notransform"><img id="nameplate" src="{% static 'images/Nameplate_cursor.png' %}"></a>
+    <div class="nav-links show-on-scroll notransform" id="navLinks">
+        <i class="fas fa-times" onclick="hideMenu()"></i>
+        <ul>
+            <li id="Home" class="inactivePage"><a href="{% url 'home' %}">Home</a></li>
+            <li id="About-Us" class="inactivePage"><a href="{% url 'about-us' %}">About Us</a></li>
+            <!-------<li id="Publications" class="inactivePage"><a href="{% url 'home' %}">Publications</a></li>-------> 
+            <!-------<li id="Projects" class="inactivePage"><a href="{% url 'home' %}">Projects</a></li>-------> 
+            <li id="Get-Involved" class="inactivePage"><a href="{% url 'getinvolved' %}">Get Involved</a></li>
+            <!------- <li id="FAQ" class="inactivePage"><a href="{% url 'home' %}">FAQ</a></li>-------> 
+            <li id="Contact-Us" class="inactivePage"><a href="{% url 'contact' %}">Contact Us</a></li>
+        </ul>
+    </div>
+    <i class="fas fa-bars show-on-scroll notransform" onclick="showMenu()"></i>
+</nav>
